@@ -29,6 +29,8 @@
 
             {{ t.tab_btn(url_for("mods.browse"), "Browse") }}
 
+            {{ t.tab_btn("https://mcmodarchive.femtopedia.de/", "New Archive") }}
+
             {% if curuser and has_role(_roles.archivist) %}
             {{ t.tab_btn(url_for("admin.main"), "Panel") }}
             {% endif %}
